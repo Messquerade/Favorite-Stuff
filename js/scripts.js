@@ -6,9 +6,15 @@ $(document).ready(function() {
     let faveArray = []
     faveArray.push(arrayInput[0], arrayInput[1], arrayInput[2]);
 
-    $("#faveList").append("<li>" + faveArray[0] + "</li>");
-    $("#faveList").append("<li>" + faveArray[1] + "</li>");
-    $("#faveList").append("<li>" + faveArray[2] + "</li>");
-    // "<li>faveArray[0]</li>"
+    faveArray.forEach(function(element) {
+      console.log(element);
+      $("#faveList").append("<li>" + element + "</li>");
+    });
   });
 });
+
+  //   $("#faveList").append("<li>" + faveArray[0] + "</li>");
+  //   $("#faveList").append("<li>" + faveArray[1] + "</li>");
+  //   $("#faveList").append("<li>" + faveArray[2] + "</li>");
+  //   // "<li>faveArray[0]</li>"
+  // });
